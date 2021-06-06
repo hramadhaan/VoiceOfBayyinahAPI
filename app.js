@@ -6,6 +6,8 @@ const serviceFirebase = require("./services/vob-moapps-firebase-adminsdk-ff242-2
 // ROUTES
 const authRoutes = require("./routes/auth");
 
+const port = 8080;
+
 const app = express();
 
 admin.initializeApp({
@@ -27,5 +29,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/auth", authRoutes);
+app.get("/", (req, res) => res.send("Hello World"));
 
-app.listen(8080);
+app.listen(process.env.PORT || port, () =>
+  console.log(`Development in http://localhost:${port}`)
+);
