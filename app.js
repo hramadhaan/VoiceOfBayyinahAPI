@@ -29,7 +29,9 @@ app.use((req, res, next) => {
 });
 
 app.use("/auth", authRoutes);
-app.get("/", (req, res) => res.send("Hello World"));
+app.get("/", (req, res) =>
+  res.redirect("https://voice-of-bayyinah-dashboard.herokuapp.com/")
+);
 
 app.listen(process.env.PORT || port, () =>
   console.log(`Development in http://localhost:${port}`)
