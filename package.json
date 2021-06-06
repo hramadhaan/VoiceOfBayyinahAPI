@@ -1,0 +1,19 @@
+{
+  "name": "voice-of-bayyinah-api",
+  "version": "1.0.0",
+  "description": "API for Voice of Bayyinah Dashboard",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hanif Ramadhan (hramadhaan20@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
